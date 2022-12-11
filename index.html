@@ -10,11 +10,10 @@
         <a class="navigation-link logo" href="index.html"><img class="logo" src="" alt="Логотип Девайс."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-              <span class="visually-hidden">
-                Поиск
-              </span>
               <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
+                <label class="label-search">
+                  <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
+                </label>
                 <button class="search-button button-transparent" type="submit">Поиск</button>
               </form>
           </li>
@@ -47,20 +46,71 @@
 
     <main>
       <section class="slider">
-        <img class="gslider-image" src="" width="" height="" alt="Квадрокоптер.">
-        <h2 class="slider-title">Порхает как бабочка,<br>
-          жалит как пчела!</h2>
-        <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-        мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="button" href="#">
-          <p class="more">Подробнее</p>
-        </a>
-        <p class="range">800 м</p>
-        <p class="radius">50 м</p>
-        <p class="range-title">Дальность полета</p>
-        <p class="radius-title">Радиус поражения</p>
+      <h2 class="visually-hidden">Слайдер</h2>
+        <div class="slider-item active">
+          <img class="slider-image" src="" width="" height="" alt="Квадрокоптер.">
+          <h2 class="slider-title">Порхает как бабочка,<br>
+            жалит как пчела!</h2>
+          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+          мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="button" href="#">
+            <p class="more">Подробнее</p>
+          </a>
+          <ul class="records-list">
+            <li class="records-item">
+              <h2 class="records-title">800 м</h2>
+              <p class="records-discription">Дальность полета</p>
+            </li>
+            <li class="records-item">
+              <h2 class="records-title">50 м</h2>
+              <p class="records-discription">Радиус поражения</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slider-item">
+          <img class="slider-image" src="" width="" height="" alt="Часы.">
+          <h2 class="slider-title">Худеем<br>правильно!</h2>
+          <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+            не пропускать занятия и соблюдать диету.</p>
+          <a class="button" href="#">
+            <p class="more">Подробнее</p>
+          </a>
+          <ul class="records-list">
+            <li class="records-item">
+              <h2 class="records-title">48 часов</h2>
+              <p class="records-discription">Без подзарядки</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="slider-item">
+          <img class="slider-image" src="" width="" height="" alt="Селфипалка.">
+          <h2 class="slider-title">Делай селфи,<br>как Бен Стиллер!</h2>
+          <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+          <a class="button" href="#">
+            <p class="more">Подробнее</p>
+          </a>
+          <ul class="records-list">
+            <li class="records-item">
+              <h2 class="records-title">8,5 м</h2>
+              <p class="records-discription">Длина палки</p>
+            </li>
+            <li class="records-item">
+              <h2 class="records-title">5 кг</h2>
+              <p class="records-discription">Вес палки</p>
+            </li>
+            <li class="records-item">
+              <h2 class="records-title">Карбон</h2>
+              <p class="records-discription">Материал</p>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catlog-category">
           <li>
             <img class="catalog-icon VR-icon" src="" width="" height="" alt="Очки виртуальной реальности.">
@@ -88,30 +138,50 @@
           </li>
         </ul>
       </section>
+
       <section class="options">
-        <ul class="option-items">
-          <li>
-            <button class="button-options active-options" type="button">ДОСТАВКА</button>
-          </li>
-          <li>
-            <button class="button-options" type="button">ГАРАНТИЯ</button>
-          </li>
-          <li>
-            <button class="button-options" type="button">КРЕДИТ</button>
-          </li>
-        </ul>
-        <h2 class="option-title">Доставка</h2>
-        <p class="option-descryption">Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно бесплатно! Ведь<br>
-          мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        <img class="delivery-icon" src="" width="" height="" alt="Доставщик.">
+        <h2 class="visually-hidden">Опции</h2>
+        <div class="tabs">
+          <ul class="option-items">
+            <li>
+              <button class="button-options active-options" type="button">Доставка</button>
+            </li>
+            <li>
+              <button class="button-options" type="button">Гарантия</button>
+            </li>
+            <li>
+              <button class="button-options" type="button">Кредит</button>
+            </li>
+          </ul>
+          <div class="tabs-full">
+            <div id="tab_01" class="tabs-main active">
+              <div class="tabs-title">Доставка</div>
+              <div class="tabs-discription">Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно! Ведь<br>
+                мы неплохо заработаем, поднимая его на ваш этаж.</div>
+            </div>
+            <div id="tab_02" class="tabs-main">
+              <div class="tabs-title">Гарантия</div>
+              <div class="tabs-discription">Если из-за возгорания купленного у нас товара у вас<br>
+                сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.</div>
+            </div>
+            <div id="tab_03" class="tabs-main">
+              <div class="tabs-title">Кредит</div>
+              <div class="tabs-discription">Залезть в долговую яму стало проще! Кредитные<br>
+                консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</div>
+              </div>
+            </div>
+          </div>
       </section>
+
       <section class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
         <a class="delivery-tape">
           <img class="truck-icon" src="" width="" height="" alt="Грузовик.">
-          <span>ДОСТАВИМ РЕДКИЙ ТОВАР ПОД ЗАКАЗ</span>
+          <span>Доставим редкий товар под заказ</span>
         </a>
-        <h1>О нас</h1>
+        <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
         <ul>
@@ -125,16 +195,18 @@
             <p>ТоксБерри</p>
           </li>
         </ul>
-        <a href="#">ПОДРОБНЕЕ О НАС</a>
+        <a href="#">Подробнее о нас</a>
         <h1>Контакты</h1>
         <p>Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки. </p>
         <h2>Интернет-магазин «Девайс»</h2>
-        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>+7 (812) 812-12-12</p>
+        <address>Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>+7 (812) 812-12-12</adress>
         <h2>Время работы</h2>
         <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-        <a href="#">НАПИШИТЕ НАМ</a>
+        <a href="#">Напишите нам</a>
       </section>
+
       <section>
+        <h2 class="visually-hidden">Подписка</h2>
         <div class="newsletter-item">
           <h2 class="subscribe-title">Подпишитесь<br>на рассылку</h2>
           <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
@@ -159,17 +231,17 @@
           <ul class="delivery-garanty-contacts-list">
             <li>
               <a class="button" href="#">
-                <span>ДОСТАВКА</span>
+                <span>Доставка</span>
               </a>
             </li>
             <li>
               <a class="button" href="#">
-                <span>ГАРАНТИЯ</span>
+                <span>Гарантия</span>
               </a>
             </li>
             <li>
               <a class="button" href="#">
-                <span>КОНТАКТЫ</span>
+                <span>Контакты</span>
               </a>
             </li>
           </ul>

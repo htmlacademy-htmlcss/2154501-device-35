@@ -6,42 +6,53 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-link logo" href="index.html"><img class="logo" src="" alt="Логотип Девайс."></a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label class="label-search">
-                  <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
-                </label>
-                <button class="search-button button-transparent" type="submit">Поиск</button>
-              </form>
-          </li>
-          <li class="navigation-item">
+      <div class="header-container">
+
+        <a class="navigation-link logo" href="index.html">
+          <img class="logo" src="" alt="Логотип Девайс.">
+        </a>
+
+        <nav class="navigation">
+          <div class="first-tape">
+
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="label-search">Поиск по сайту</label>
+              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
+              <button class="search-button button-transparent" type="submit">Поиск</button>
+            </form>
+
             <a class="navigation-link" href="#">Войти</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Корзина</a>
-          </li>
-        </ul>
-        <ul class="navigation-list-two-row">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+
+            <ul class="navigation-user">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Сравнить</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Корзина</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="second-tape">
+
+            <button class="catalog-button">Каталог товаров</button>
+
+            <ul class="navigation-main">
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -116,27 +127,21 @@
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catlog-category">
           <li>
-            <img class="catalog-icon VR-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Виртуальная реальность</h3>
           </li>
           <li>
-            <img class="catalog-icon monopod-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Моноподы для селф</h3>
           </li>
           <li>
-            <img class="catalog-icon action-camera-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Экшн-камеры</h3>
           </li>
           <li>
-            <img class="catalog-icon fitness-band-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Фитнес-браслеты</h3>
           </li>
           <li>
-            <img class="catalog-icon watch-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Умные часы</h3>
           </li>
           <li>
-            <img class="catalog-icon quadrocopter-icon" src="" width="" height="" alt="">
             <h3 class="catalog-title">Квадрокоптеры</h3>
           </li>
         </ul>
@@ -210,7 +215,7 @@
 
         <section class="contacts-block">
           <div class="contacts">
-            <p class="contacts-header">Контакты</p>
+            <h2 class="contacts-header">Контакты</h2>
             <p class="contacts-discription">Вы можете забрать товар сами, заехав в наш офис.<br>
               Заодно сможете проверить работоспособность покупки. </p>
             <div class="address-list">

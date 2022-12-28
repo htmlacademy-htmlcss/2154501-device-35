@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -60,7 +61,7 @@
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"></a>
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <img class="breadcrumbs-link" src="./images/arrow.svg" width="4" height="7" alt="стрелка.">
@@ -78,7 +79,8 @@
       </header>
 
       <section class="catalog-monopods">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="inner-main-title">Фильтр:</h2>
+
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group range-group">
@@ -249,73 +251,72 @@
                 </a>
               </li>
             </ul>
-            <button class="button pagination-show-more" type="button">Показать ещё</button>
           </div>
           </section>
 
 
 
 
-      <footer class="page-footer">
-        <img class="device-logo" src="./images/logo-yellow.svg" width="145" height="36" alt="Логотип девайс.">
-        <section class="footer-adress">
-          <h2 class="visually-hidden">Адрес</h2>
-          <address class="address-footer-discription">Санкт-Петербург, набережная
-            реки Карповки, 5, литера П.
-          </address>
-        </section>
+          <footer class="page-footer">
+            <img class="device-logo" src="./images/logo-yellow.svg" width="145" height="36" alt="Логотип девайс.">
+            <section class="footer-adress">
+              <h2 class="visually-hidden">Адрес</h2>
+              <address class="address-footer-discription">Санкт-Петербург, набережная<br>
+                реки Карповки, 5, литера П.
+              </address>
+            </section>
 
-        <section class="footer-delivery-garanty-contacts">
-          <h2 class="visually-hidden">Доставка, гарантия, контакты</h2>
-          <ul class="delivery-garanty-contacts-list">
-            <li>
-              <a class="button" href="#">Доставка</a>
-            </li>
-            <li>
-              <a class="button" href="#">Гарантия</a>
-            </li>
-            <li>
-              <a class="button" href="#">Контакты</a>
-            </li>
-          </ul>
-        </section>
+            <section class="footer-delivery-garanty-contacts">
+              <h2 class="visually-hidden">Доставка, гарантия, контакты</h2>
+              <ul class="delivery-garanty-contacts-list">
+                <li>
+                  <a class="button-footer" href="#">Доставка</a>
+                </li>
+                <li>
+                  <a class="button-footer" href="#">Гарантия</a>
+                </li>
+                <li>
+                  <a class="button-footer" href="#">Контакты</a>
+                </li>
+              </ul>
+            </section>
 
-        <section class="footer-social">
-          <h2 class="visually-hidden">Соц. сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Telegram</span>
+            <section class="footer-social">
+              <h2 class="visually-hidden">Соц. сети</h2>
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="button" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Telegram</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button social" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Youtube</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button" href="https://twitter.com/htmlacademy_ru">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section class="footer-contacts">
+              <h2 class="visually-hidden">Контакты</h2>
+              <address class="footer-contacts">
+                <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              </address>
+            </section>
+
+            <section class="htmlacademy">
+              <h2 class="visually-hidden">Сайт академии</h2>
+              <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+                <img class="contacts-logo" src="./images/htmlacademy.svg" width="115" height="33" alt="Логотип HTML-академии">
               </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button social" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+            </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <address class="footer-contacts">
-            <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
-
-        <section class="htmlacademy">
-          <h2 class="visually-hidden">Сайт академии</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <img class="contacts-logo" src="./images/htmlacademy.svg" width="115" height="33" alt="Логотип HTML-академии">
-          </a>
-        </section>
-
-      </footer>
+          </footer>
 
     </main>
 

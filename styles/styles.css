@@ -77,7 +77,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
   border: none;
 }
@@ -90,7 +90,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
   list-style-type: none;
 }
@@ -122,7 +122,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -177,7 +177,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -209,7 +209,7 @@ body {
   line-height: 23px;
   background-color: #ffffff;
   color: #000000;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
 }
 
 .about-header, .contacts-header {
@@ -255,7 +255,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -353,7 +353,7 @@ body {
   background-color: #F0F0F0;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -392,10 +392,150 @@ body {
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
-  letter-spacing: 0.2;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 .delivery-garanty-contacts-list {
   list-style-type: none;
+}
+
+/**.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}**/
+
+.footer-social-list {
+  list-style-type: none;
+}
+
+.footer-contacts-phone {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-style: normal;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.inner-header-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.inner-main-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.catalog-filter-title {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-style: bold;
+}
+
+.control-label {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.button-for-filter {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.product-card-list {
+  list-style-type: none;
+}
+
+.product-card-link{
+  text-decoration: none;
+}
+
+.product-card-title {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.product-card-price {
+  color: #444444;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.button-loading {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.pagination-link {
+  list-style-type: none;
+  text-decoration: none;
 }

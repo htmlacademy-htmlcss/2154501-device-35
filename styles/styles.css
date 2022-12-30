@@ -32,14 +32,14 @@ body {
   text-decoration: none;
 }
 
-.field {
+.field-search {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   background-color: #ffffff;
   color: #000000;
-  opacity: 0.3;
+
 }
 
 .search-button {
@@ -400,7 +400,7 @@ body {
   list-style-type: none;
 }
 
-/**.visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -409,7 +409,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}**/
+}
 
 .footer-social-list {
   list-style-type: none;
@@ -538,4 +538,8 @@ body {
 .pagination-link {
   list-style-type: none;
   text-decoration: none;
+}
+
+.grey {
+  opacity: 0.3;
 }

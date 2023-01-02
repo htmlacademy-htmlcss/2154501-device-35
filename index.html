@@ -17,19 +17,19 @@
           <div class="first-tape">
 
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="label-search">Поиск по сайту</label>
+              <label class="label-search visually-hidden">Поиск по сайту</label>
               <input class="field-search" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
               <button class="search-button button-transparent" type="submit">Найти</button>
             </form>
 
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link thin-link" href="#">Войти</a>
 
             <ul class="navigation-user">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Сравнить</a>
+                <a class="navigation-link thin-link" href="#">Сравнить</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Корзина</a>
+                <a class="navigation-link thin-link" href="#">Корзина</a>
               </li>
             </ul>
 
@@ -56,13 +56,13 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-container">
       <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider-item active">
           <img class="slider-image" src="./images/slider-1.png" width="560" height="560" alt="Белый вертолет с четырьмя черными пропеллерами и лазером.">
           <h3 class="visually-hidden">Вертолет</h3>
-          <p class="slider-title">Порхает как бабочка,<br>
+          <p class="slider-title slider-01">Порхает как бабочка,<br>
             жалит как пчела!</p>
           <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
           мощным лазером, замаскированным под стандартную камеру.</p>
@@ -84,7 +84,7 @@
         <div class="slider-item">
           <img class="slider-image" src="./images/slider-2.png" width="560" height="560" alt="Черный фитнесс браслет с текстом на дисплее я вижу что ты ешь.">
           <h3 class="visually-hidden">Фитнесс браслет</h3>
-          <p class="slider-title">Худеем<br>правильно!</p>
+          <p class="slider-title slider-02">Худеем<br>правильно!</p>
           <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.</p>
           <a class="button" href="#">
@@ -101,7 +101,7 @@
         <div class="slider-item">
           <img class="slider-image" src="./images/slider-3.png" width="560" height="560" alt="Черная селфипалка с тремя синими опорами.">
           <h3 class="visually-hidden">Селфипалка</h3>
-          <p class="slider-title">Делай селфи,<br>как Бен Стиллер!</p>
+          <p class="slider-title slider-03">Делай селфи,<br>как Бен Стиллер!</p>
           <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="button" href="#">
@@ -126,24 +126,24 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
-        <ul class="catlog-category">
-          <li>
-            <a class="catalog-title">Виртуальная реальность</a>
+        <ul class="catalog-category">
+          <li class="catalog-item">
+            <a class="catalog-title icon-vr">Виртуальная реальность</a>
           </li>
-          <li>
-            <a class="catalog-title">Моноподы для селфи</a>
+          <li class="catalog-item">
+            <a class="catalog-title icon-mono">Моноподы<br>для селфи</a>
           </li>
-          <li>
-            <a class="catalog-title">Экшн-камеры</a>
+          <li class="catalog-item">
+            <a class="catalog-title icon-camera">Экшн-камеры</a>
           </li>
-          <li>
-            <a class="catalog-title">Фитнес-браслеты</a>
+          <li class="catalog-item">
+            <a class="catalog-title icon-band">Фитнес-браслеты</a>
           </li>
-          <li>
-            <a class="catalog-title">Умные часы</a>
+          <li class="catalog-item">
+            <a class="catalog-title icon-watch">Умные часы</a>
           </li>
-          <li>
-            <a class="catalog-title">Квадрокоптеры</a>
+          <li class="catalog-item">
+            <a class="catalog-title icon-quadro">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -163,25 +163,25 @@
             </li>
           </ul>
           <div class="tabs-full">
-            <div id="tab_01" class="tabs-main active">
-              <h3 class="tabs-title">Доставка</h3>
+            <div id="tab_01" class="tabs-main active-tab">
+              <h3 class="tabs-title tab-01">Доставка</h3>
               <p class="tabs-discription">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно! Ведь<br>
                 мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div id="tab_02" class="tabs-main">
-              <h3 class="tabs-title">Гарантия</h3>
+            <div id="tab_02" class="tabs-main visually-hidden">
+              <h3 class="tabs-title tab-02">Гарантия</h3>
               <p class="tabs-discription">Если из-за возгорания купленного у нас товара у вас<br>
                 сгорит дом — не переживайте, мы выдадим вам новый.<br>
                 Товар, не дом, конечно же.</p>
             </div>
-            <div id="tab_03" class="tabs-main">
-              <h3 class="tabs-title">Кредит</h3>
+            <div id="tab_03" class="tabs-main visually-hidden">
+              <h3 class="tabs-title tab-03">Кредит</h3>
               <p class="tabs-discription">Залезть в долговую яму стало проще! Кредитные<br>
                 консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
-              </div>
             </div>
           </div>
+        </div>
       </section>
 
       <div class="delivery">
@@ -211,7 +211,7 @@
               <p class="discription-item">ТоксБерри</p>
             </li>
           </ul>
-          <a class="about-navigation-link" href="#">Подробнее о нас</a>
+          <a class="about-navigation-link yellow-line" href="#">Подробнее о нас</a>
         </section>
 
         <section class="contacts-block">
@@ -227,7 +227,7 @@
               <label class="work-time-discription">пн—пт: с 10:00 до 22:00<br></label>
               <label class="work-time-discription">сб—вс: с 10:00 до 19:00</label>
             </fieldset>
-            <a class="contacts-navigation-link" href="#">Напишите нам</a>
+            <a class="contacts-navigation-link yellow-line" href="#">Напишите нам</a>
           </div>
         </section>
       </div>
@@ -239,11 +239,11 @@
           <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
             длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="newsletter-form-label" for="newsletter-email">электронная почта</label>
+            <label class="newsletter-form-label visually-hidden" for="newsletter-email">электронная почта</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="newsletter-button" type="submit">Подписаться</button>
-            <p class="free">Это бесплатно</p>
           </form>
+          <p class="free">Это бесплатно</p>
         </div>
       </section>
 
@@ -275,17 +275,17 @@
           <h2 class="visually-hidden">Соц. сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="button-telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button social" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="button-YT" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <a class="button-twitter" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>

@@ -481,6 +481,7 @@ body {
   background-color: transparent;
   color: #000000;
   text-decoration: none;
+  text-align: center;
 }
 
 .tabs-discription {
@@ -692,6 +693,9 @@ body {
   text-decoration: none;
   letter-spacing: 3px;
   text-transform: uppercase;
+  max-width: 270px;
+  padding: 0 41px;
+  text-align: center;
 }
 
 .address-title {
@@ -778,11 +782,11 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   z-index: -1;
-  width: 270px;
+  width: 100%;
   height: 8px;
-  margin-top: -4px;
+  transform: translate(-50%, -50%);
   background-color: #FFE17F;
 }
 
@@ -853,9 +857,13 @@ body {
   display: grid;
   grid-template-columns: 239px 1fr 175px;
   grid-template-rows: 40px 40px 40px;
-  row-gap: 120px;
+  row-gap: 50px;
   column-gap: 35px;
   padding: 61px 140px;
+}
+
+.yellow-line-footer {
+  position: relative;
 }
 
 .device-logo {
@@ -869,13 +877,15 @@ body {
   position: relative;
 }
 
-.footer-adress::before {
+.yellow-line-footer::before {
   content: "";
   position: absolute;
-  bottom: -150px;
+  left: 140px;
+  top: 300px;
   width: 80px;
   height: 7px;
   background-color: #FFC500;
+  z-index: 2;
 }
 
 .address-footer-discription {
@@ -1159,6 +1169,10 @@ html {
   max-height: 560px;
   max-width: 1160px;
   flex-wrap: wrap;
+}
+
+.slider-no-active {
+  display: none;
 }
 
 .slider {

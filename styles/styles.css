@@ -261,10 +261,25 @@ body {
   background-color: #FFE17F;
 }
 
-.slider::before {
+/**.slider::before {
   content: "";
   position: absolute;
   top: -152px;
+  left: 0;
+  z-index: -3;
+  width: 1160px;
+  height: 300px;
+  background-color: #FFE17F;
+}**/
+
+.for-yellow {
+  position: relative;
+}
+
+.for-yellow::before {
+  content: "";
+  position: absolute;
+  top: 20px;
   left: 0;
   z-index: -3;
   width: 1160px;
@@ -971,6 +986,8 @@ body {
 
 .breadcrumbs {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .breadcrumbs-link {
@@ -981,6 +998,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
+}
+
+.breadcrumbs-item {
+  margin-right: 16px;
+}
+
+.inner-header {
+  background-color: #ffffff;
+  margin: 35px auto;
+  padding-top: 35px;
 }
 
 .inner-header-title {
@@ -999,6 +1026,10 @@ body {
   color: #000000;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.catalog-monopods {
+  background-color: #CCCCCC;
 }
 
 .catalog-filter-title {
@@ -1087,6 +1118,7 @@ body {
 
 .grey {
   opacity: 0.3;
+  margin-left: 28px;
 }
 
 html {
@@ -1144,4 +1176,55 @@ html {
 
 .records-item {
   margin-right: 20px;
+}
+
+.person {
+  margin-left: 53px;
+  position: relative;
+}
+
+.person::before {
+  position: absolute;
+  top: 9px;
+  left: -27px;
+  width: 15px;
+  height: 12px;
+  content: "";
+  background-image: url("../images/piople-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.compare {
+  margin-left: 48px;
+  position: relative;
+}
+
+.compare::before {
+  position: absolute;
+  top: 9px;
+  left: -22px;
+  width: 10px;
+  height: 12px;
+  content: "";
+  background-image: url("../images/compare-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.basket {
+  margin-left: 48px;
+  position: relative;
+}
+
+.basket::before {
+  position: absolute;
+  top: 9px;
+  left: -22px;
+  width: 16px;
+  height: 14px;
+  content: "";
+  background-image: url("../images/basket-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

@@ -24,6 +24,7 @@
 
 body {
   margin: 0;
+  min-width: 1440px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -36,8 +37,20 @@ body {
   text-decoration: none;
 }
 
+.page-header {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
 .main-container {
   flex-grow: 1;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -52,7 +65,7 @@ body {
   background-color: transparent;
   color: #000000;
   min-height: 40px;
-  min-width: 359px;
+  width: 359px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   padding: 0;
@@ -80,17 +93,18 @@ body {
 .search-button {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: transparent;
   color: #000000;
   min-height: 40px;
-  min-width: 160px;
+  width: 160px;
   border: 2px solid #000000;
   border-radius: 0 50px 50px 0;
   padding: 0;
   box-sizing: border-box;
   margin-left: -6px;
+  margin-right: auto;
 }
 
 .navigation-link {
@@ -104,8 +118,13 @@ body {
 }
 
 .navigation-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   margin: 0;
   list-style-type: none;
+  padding: 0;
+  max-width: 240px;
 }
 
 .navigation-main {
@@ -116,8 +135,20 @@ body {
   text-decoration: none;
 }
 
+.catalog-main {
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .catalog {
   margin-bottom: 70px;
+  margin: 0;
+  max-width: 840px;
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-head {
@@ -130,6 +161,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
+  min-width: 236px;
   background-color: transparent;
   color: #000000;
   text-decoration: none;
@@ -174,7 +206,7 @@ body {
 .slider-01::before {
   position: absolute;
   top: 4px;
-  left: 243px;
+  left: 343px;
   width: 250px;
   height: 135px;
   content: "01";
@@ -190,7 +222,7 @@ body {
 .slider-02::before {
   position: absolute;
   top: 4px;
-  left: 243px;
+  left: 343px;
   width: 250px;
   height: 135px;
   content: "02";
@@ -206,7 +238,7 @@ body {
 .slider-03::before {
   position: absolute;
   top: 4px;
-  left: 243px;
+  left: 343px;
   width: 250px;
   height: 135px;
   content: "03";
@@ -266,17 +298,6 @@ body {
   background-color: #FFE17F;
 }
 
-/**.slider::before {
-  content: "";
-  position: absolute;
-  top: -152px;
-  left: 0;
-  z-index: -3;
-  width: 1160px;
-  height: 300px;
-  background-color: #FFE17F;
-}**/
-
 .for-yellow {
   position: relative;
 }
@@ -285,10 +306,27 @@ body {
   content: "";
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   z-index: -3;
   width: 1160px;
   height: 300px;
+  background-color: #FFE17F;
+}
+
+.for-catalog-yellow {
+  position: relative;
+}
+
+.for-catalog-yellow::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: -3;
+  width: 1160px;
+  height: 186px;
   background-color: #FFE17F;
 }
 
@@ -470,12 +508,12 @@ body {
 .active-advantages {
   background-color: #000000;
   color: #FFE17F;
-  padding-right: 100px;
+  padding-right: 102px;
 }
 
 .tabs-full {
   border-left: solid 7px #000000;
-  padding-left: 50px;
+  padding-left: 116px;
 }
 
 .tabs-title {
@@ -500,18 +538,19 @@ body {
 }
 
 .tabs {
-  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: left;
+  margin-left: 140px;
 }
 
-.tabs::before {
+.advantages::before {
   content: "";
   position: absolute;
   top: 80px;
   left: 0;
   z-index: -3;
-  width: 1440px;
+  width: 100%;
   height: 289px;
   background-color: #F0F0F0;
 }
@@ -568,6 +607,9 @@ body {
 }
 
 .advantages {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
   margin-bottom: 162px;
 }
 
@@ -576,6 +618,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 70px auto;
+  margin-top: 200px;
   max-width: 1160px;
   max-height: 100px;
 
@@ -622,6 +665,9 @@ body {
   display: flex;
   flex-direction: row;
   gap: 108px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 
 .about-block,
@@ -732,6 +778,7 @@ body {
   background-color: #ffffff;
   color: #444444;
   font-style: normal;
+  margin-bottom: 30px;
 }
 
 .work-time-header {
@@ -766,6 +813,7 @@ body {
   background-color: transparent;
   color: #000000;
   text-decoration: none;
+  margin-left: 147px;
 }
 
 .subscribe-text {
@@ -776,6 +824,11 @@ body {
   background-color: #F0F0F0;
   color: #444444;
   font-style: normal;
+  margin-top: 64px;
+}
+
+.newsletter-form {
+  margin-left: 147px;
 }
 
 .yellow-line {
@@ -855,6 +908,8 @@ body {
   flex-wrap: wrap;
   column-gap: 252px;
   row-gap: 144px;
+  margin: 64px auto;
+  margin-bottom: 0;
 }
 
 .page-footer {
@@ -1022,7 +1077,8 @@ body {
 .inner-header {
   background-color: #ffffff;
   margin: 35px auto;
-  padding-top: 35px;
+  margin-top: 50px;
+  width: 1079px;
 }
 
 .inner-header-title {
@@ -1044,18 +1100,21 @@ body {
 }
 
 .catalog-monopods {
-
   flex-grow: 1;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .full-filter {
   display: flex;
-  flex-direction: column;
-  flex-flow: column wrap;
-  max-height: 1316px;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1160px;
   column-gap: 10px;
-  background-color: #CCCCCC;
+  background-color: #F0F0F0;
+  margin: 0 auto;
 }
 
 .catalog-filter-title {
@@ -1175,11 +1234,7 @@ html {
 .first-tape {
   display: flex;
   flex-direction: row;
-}
-
-.navigation-user {
-  display: flex;
-  flex-direction: row;
+  max-width: 1040px;
 }
 
 .second-tape {
@@ -1213,8 +1268,11 @@ html {
 }
 
 .slider {
-  margin-bottom: 200px;
   position: relative;
+  margin: 0 auto;
+  max-width: 1160px;
+  min-height: 560px;
+  margin-bottom: 200px;
 }
 
 .records-list {

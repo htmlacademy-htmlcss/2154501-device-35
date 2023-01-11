@@ -63,7 +63,18 @@
       <section class="slider">
       <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider-item slider-active">
-          <img class="slider-image" src="./images/slider-1.png" width="560" height="560" alt="Белый вертолет с четырьмя черными пропеллерами и лазером.">
+          <div class="slider-wrapper">
+            <img class="slider-image" src="./images/slider-1.png" width="560" height="560" alt="Белый вертолет с четырьмя черными пропеллерами и лазером.">
+            <div class="slider-controls">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущий товар</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующий товар</span>
+              </button>
+            </div>
+          </div>
+
           <h3 class="visually-hidden">Вертолет</h3>
           <p class="slider-title slider-01">Порхает как бабочка,<br>
             жалит как пчела!</p>
@@ -83,6 +94,24 @@
             </li>
           </ul>
         </div>
+
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">1 товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">2 товар</span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">3 товар</span>
+            </button>
+          </li>
+        </ol>
 
         <div class="slider-item slider-no-active">
           <img class="slider-image" src="./images/slider-2.png" width="560" height="560" alt="Черный фитнесс браслет с текстом на дисплее я вижу что ты ешь.">

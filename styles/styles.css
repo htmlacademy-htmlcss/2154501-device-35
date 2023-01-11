@@ -76,6 +76,7 @@ body {
 
 .search-form {
   position: relative;
+  max-width: 518px;
 }
 
 .search-form::before {
@@ -107,6 +108,12 @@ body {
   margin-right: auto;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: column;
+  max-width: 1040px;
+}
+
 .navigation-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -125,8 +132,49 @@ body {
   margin: 0;
   list-style-type: none;
   padding: 0;
-  max-width: 240px;
 }
+
+.number-of-basket {
+  /*font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: transparent;
+  color: #000000;
+  position: relative;
+  margin-right: 20px;*/
+  position: absolute;
+  min-width: 21px;
+  height: 21px;
+  padding: 2px 4px 0;
+  box-sizing: border-box;
+  background-color:#FFFFFF;
+  border-radius: 21px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 3px;
+  left: -18px;
+}
+
+/*.number-of-basket::before {
+  position: absolute;
+  min-width: 21px;
+  min-height: 21px;
+  content: "";
+  background-color:#FFFFFF;
+  border-radius: 21px;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  left: 50%;
+  top: -80%;
+  transform: translate(-50%, 50%);
+}*/
 
 .navigation-main {
   list-style-type: none;
@@ -316,7 +364,12 @@ body {
   text-decoration: none;
 }
 
+.button-in-slider {
+  align-self: flex-start;
+}
+
 .more {
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -324,24 +377,27 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
+  text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  position: relative;
   z-index: 2;
-  max-width: 210px;
-  padding-left: 40px;
+  padding: 0 37px;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-start;
 }
 
 .more::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 50%;
   z-index: -1;
-  width: 220px;
+  width: 100%;
   height: 8px;
-  margin-top: -4px;
+  transform: translate(-50%, -50%);
   background-color: #FFE17F;
+  transition: height 0.25s ease-in-out;
 }
 
 .for-yellow {
@@ -408,6 +464,7 @@ body {
   gap: 40px;
   justify-content: space-between;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .catalog-title {
@@ -537,6 +594,9 @@ body {
   position: relative;
   border: none;
   align-self: center;
+  text-align: center;
+  width: 160px;
+  height: 40px;
 }
 
 .button-advantages::before {
@@ -554,7 +614,8 @@ body {
 .active-advantages {
   background-color: #000000;
   color: #FFE17F;
-  padding-right: 102px;
+  padding-right: 224px;
+  padding-left: 20px;
 }
 
 .tabs-full {
@@ -905,6 +966,7 @@ body {
   opacity: 0.5;
   border-top: none;
   border-left: none;
+  border-right: none;
   width: 557px;
 }
 
@@ -1307,6 +1369,7 @@ html {
   display: flex;
   flex-direction: row;
   max-width: 1040px;
+  justify-content: start;
 }
 
 .second-tape {
@@ -1325,6 +1388,11 @@ html {
 }
 .thin-link {
   margin-left: 36px;
+}
+
+.enter-link {
+  margin-left: 53px;
+  flex-grow: 1;
 }
 
 .slider-item {
@@ -1360,7 +1428,6 @@ html {
 }
 
 .person {
-  margin-left: 53px;
   position: relative;
 }
 
@@ -1378,7 +1445,9 @@ html {
 
 .compare {
   margin-left: 48px;
+  margin-right: 61px;
   position: relative;
+  display: inline-block;
 }
 
 .compare::before {
@@ -1394,18 +1463,18 @@ html {
 }
 
 .basket {
-  margin-left: 48px;
+  margin-left: 20px;
   position: relative;
 }
 
 .basket::before {
-  position: absolute;
-  top: 9px;
-  left: -22px;
+  display: inline-block;
   width: 16px;
   height: 14px;
   content: "";
+  z-index: -2;
   background-image: url("../images/basket-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 10px;
 }

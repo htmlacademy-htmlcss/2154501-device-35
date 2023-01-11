@@ -1441,6 +1441,14 @@ html {
   column-gap: 40px;
 }
 
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
 .slider-pagination {
   display: flex;
   flex-wrap: wrap;
@@ -1467,6 +1475,10 @@ html {
 
 .slider-pagination-button:hover {
   opacity: 0.6;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
 }
 
 .slider-pagination-button-current {

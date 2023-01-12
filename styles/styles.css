@@ -1255,6 +1255,20 @@ body {
   color: #000000;
   letter-spacing: 3px;
   text-transform: uppercase;
+  padding-left: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+.sorting-main-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .catalog-monopods {
@@ -1287,6 +1301,36 @@ body {
 
 .catalog-filter-group {
   border: none;
+}
+
+.range-group {
+  width: 200px;
+}
+
+.range-scale {
+  margin-top: 44px;
+  position: relative;
+  height: 2px;
+  background-color: #DCDCDC;
+  margin-bottom: 20px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: rgba(255, 255, 255);
+  left: 0;
+  width: 226px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 18x;
+  height: 18px;
+  background: #ffffff;
+  border: solid 2px #000000;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .control-label {

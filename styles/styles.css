@@ -49,8 +49,7 @@ body {
 
 .main-container {
   flex-grow: 1;
-  width: 1440px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
 }
 
 .logo {
@@ -685,7 +684,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-left: 140px;
+  margin: 0 auto;
+  max-width: 1160px;
 }
 
 .advantages::before {
@@ -753,7 +753,7 @@ body {
 .advantages {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   margin-bottom: 162px;
 }
 
@@ -1047,6 +1047,11 @@ body {
   background-color: transparent;
 }
 
+.newsletter-section {
+  background-color: #F0F0F0;
+  margin: 0 auto;
+}
+
 .newsletter-item {
   background-color: #F0F0F0;
   display: flex;
@@ -1055,6 +1060,7 @@ body {
   row-gap: 144px;
   margin: 64px auto;
   margin-bottom: 0;
+  max-width: 1440px;
 }
 
 .page-footer {
@@ -1066,6 +1072,7 @@ body {
   column-gap: 20px;
   padding: 62px 140px;
   padding-bottom: 77px;
+
 }
 
 .yellow-line-footer {

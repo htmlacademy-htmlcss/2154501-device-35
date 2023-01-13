@@ -40,6 +40,7 @@ body {
 .page-header {
   width: 1440px;
   margin: 0 auto;
+  margin-top: 20px;
 }
 
 .header-container {
@@ -54,6 +55,10 @@ body {
 
 .logo {
   background-color: transparent;
+}
+
+.logo-header {
+  margin-left: 4px;
 }
 
 .field-search {
@@ -121,6 +126,7 @@ body {
   background-color: transparent;
   color: #000000;
   text-decoration: none;
+
 }
 
 .navigation-user {
@@ -134,14 +140,6 @@ body {
 }
 
 .number-of-basket {
-  /*font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  background-color: transparent;
-  color: #000000;
-  position: relative;
-  margin-right: 20px;*/
   position: absolute;
   min-width: 21px;
   height: 21px;
@@ -156,24 +154,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 3px;
-  left: -18px;
+  top: 4px;
+  left: -15px;
 }
-
-/*.number-of-basket::before {
-  position: absolute;
-  min-width: 21px;
-  min-height: 21px;
-  content: "";
-  background-color:#FFFFFF;
-  border-radius: 21px;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: -1;
-  left: 50%;
-  top: -80%;
-  transform: translate(-50%, 50%);
-}*/
 
 .navigation-main {
   list-style-type: none;
@@ -185,7 +168,7 @@ body {
 
 .catalog-main {
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 86px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -250,6 +233,8 @@ body {
 }
 
 .catalog-button {
+  padding: 0;
+  margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -258,17 +243,16 @@ body {
   background-color: transparent;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
-  margin-right: 276px;
   position: relative;
 }
 
 .catalog-button::after {
   position: absolute;
-  top: 4px;
-  left: 243px;
+  top: 3px;
+  left: 247px;
   width: 50px;
   height: 50px;
   content: "";
@@ -318,10 +302,15 @@ body {
   position: relative;
 }
 
+.slider-image {
+  margin-top: -20px;
+}
+
 .slider-controls {
+  margin-left: 30px;
   position: absolute;
-  top: 50%;
-  width: 100%;
+  top: 221px;
+  width: 530px;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
@@ -335,8 +324,8 @@ body {
 
 .slider-01::before {
   position: absolute;
-  top: 4px;
-  left: 343px;
+  top: -38px;
+  left: 299px;
   width: 250px;
   height: 135px;
   content: "01";
@@ -351,8 +340,8 @@ body {
 
 .slider-02::before {
   position: absolute;
-  top: 4px;
-  left: 343px;
+  top: -40px;
+  left: 300px;
   width: 250px;
   height: 135px;
   content: "02";
@@ -367,8 +356,8 @@ body {
 
 .slider-03::before {
   position: absolute;
-  top: 4px;
-  left: 343px;
+  top: -40px;
+  left: 300px;
   width: 250px;
   height: 135px;
   content: "03";
@@ -388,6 +377,7 @@ body {
   line-height: 50px;
   background-color: transparent;
   color: #000000;
+  margin-top: 102px;
 }
 
 .slider-text {
@@ -398,10 +388,14 @@ body {
   background-color: transparent;
   color: #000000;
   text-decoration: none;
+  margin-top: -21px;
 }
 
 .button-in-slider {
   align-self: flex-start;
+  margin-top: 22px;
+  margin-left: 2px;
+  margin-bottom: 6px;
 }
 
 .more {
@@ -414,7 +408,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   z-index: 2;
   padding: 0 37px;
@@ -441,6 +435,7 @@ body {
 }
 
 .for-yellow::before {
+  margin-left: 4px;
   content: "";
   position: absolute;
   top: 20px;
@@ -480,6 +475,7 @@ body {
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
+  margin-bottom: -4px;
 }
 
 .records-discription {
@@ -501,6 +497,8 @@ body {
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0;
+  margin-left: 8px;
+  margin-top: 43px;
 }
 
 .catalog-title {
@@ -525,7 +523,7 @@ body {
 
 .icon-vr::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -538,7 +536,7 @@ body {
 
 .icon-mono::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -551,7 +549,7 @@ body {
 
 .icon-camera::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -564,7 +562,7 @@ body {
 
 .icon-band::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -577,7 +575,7 @@ body {
 
 .icon-watch::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -590,7 +588,7 @@ body {
 
 .icon-quadro::before {
   position: absolute;
-  top: -192px;
+  top: -194px;
   left: 0;
   width: 160px;
   height: 160px;
@@ -753,19 +751,31 @@ body {
 .advantages {
   position: relative;
   margin: 0 auto;
-  /*max-width: 1440px;*/
   margin-bottom: 162px;
+}
+
+.delivery-container {
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .delivery {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 70px auto;
-  margin-top: 200px;
-  max-width: 1160px;
-  max-height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  margin: o;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background-color: #F0F0F0;
+}
 
+.delivery:hover .button-truck {
+  background-color: #FFC700;
+}
+
+.delivery:active {
+  opacity: 0.3;
 }
 
 .button-delivery {
@@ -777,24 +787,25 @@ body {
   background-color: #F0F0F0;
   color: #000000;
   letter-spacing: 3px;
-  padding: 40px 125px;
+  /*padding: 40px 125px;*/
   position: relative;
 }
 
-.button-delivery::before {
-  position: absolute;
-  top: 0;
-  left: -125px;
+.button-truck {
+  margin: 0;
+  padding: 0;
   width: 125px;
   height: 100px;
-  content: "";
   background-image: url("../images/truck.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: #FFE17F;
+  border: none;
 }
 
 .button-info {
+  margin: 0;
+  padding: 0;
   width: 125px;
   height: 100px;
   background-image: url("../images/info-button.svg");
@@ -802,7 +813,6 @@ body {
   background-position: center;
   background-color: #F0F0F0;
   border: none;
-  margin-top: -37px;
 }
 
 .about-columns {
@@ -992,35 +1002,41 @@ body {
   background-color: #FFE17F;
 }
 
+.newsletter-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
 .field {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  background-color: #F0F0F0;
-  color: #444444;
-  font-style: normal;
-  opacity: 0.5;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  position: relative;
   width: 557px;
+  height: 57px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: transparent;
+  padding: 0;
+  padding-left: 16px;
 }
 
 .newsletter-button {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway';
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  background-color: #F0F0F0;
-  color: #000000;
-  text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  border: solid 2px #C4C4C4;
-  margin-left: -6px;
+  border: 3px solid #C4C4C4;
   min-width: 253px;
   min-height: 57px;
+  margin-right: 220px;
 }
 
 .free {
@@ -1605,38 +1621,59 @@ html {
   flex-direction: row;
   max-width: 1040px;
   justify-content: start;
+  margin-top: 21px;
+  margin-left: 4px;
 }
 
 .second-tape {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  margin-top: 27px;
+  justify-content: space-between;
 }
 
 .navigation-main {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 471px;
+  padding: 0;
+  margin-right: -8px;
+
 }
 
 .bold-link {
-  margin-left: 45px;
+  /*margin-left: 45px;*/
+  letter-spacing: 0.2em;
+  margin-left: -4px;
 }
 .thin-link {
   margin-left: 36px;
 }
 
+.for-garanty {
+  margin-left: -9px;
+}
+
 .enter-link {
   margin-left: 53px;
   flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .slider-item {
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
   max-height: 560px;
   max-width: 1160px;
   flex-wrap: wrap;
   column-gap: 40px;
+  margin-bottom: -27px;
+  margin-left: 4px;
 }
 
 .slider-button:hover {
@@ -1651,9 +1688,15 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: 0;
+  margin-right: -9px;
   padding: 0;
   list-style-type: none;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .slider-pagination-item {
@@ -1697,14 +1740,13 @@ html {
 
 .records-list {
   margin: 0;
-  margin-top: 50px;
   padding: 0;
   display: flex;
   flex-direction: row;
 }
 
 .records-item {
-  margin-right: 20px;
+  margin-right: 21px;
 }
 
 .person {
@@ -1713,7 +1755,7 @@ html {
 
 .person::before {
   position: absolute;
-  top: 9px;
+  top: 14px;
   left: -27px;
   width: 15px;
   height: 12px;
@@ -1724,10 +1766,10 @@ html {
 }
 
 .compare {
-  margin-left: 48px;
-  margin-right: 61px;
   position: relative;
   display: inline-block;
+  margin-right: 13px;
+  margin-top: 5px;
 }
 
 .compare::before {
@@ -1745,6 +1787,11 @@ html {
 .basket {
   margin-left: 20px;
   position: relative;
+  margin-right: -4px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .basket::before {
@@ -1756,5 +1803,6 @@ html {
   background-image: url("../images/basket-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 10px;
+  margin-right: 12px;
+  margin-top: -5px;
 }

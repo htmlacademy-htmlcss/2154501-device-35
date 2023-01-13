@@ -10,7 +10,7 @@
       <div class="header-container">
 
         <a class="navigation-link logo" href="index.html">
-          <img class="logo" src="./images/logo.svg" width="145" height="36" alt="Логотип Девайс.">
+          <img class="logo logo-header" src="./images/logo.svg" width="145" height="36" alt="Логотип Девайс.">
         </a>
 
         <nav class="navigation">
@@ -47,7 +47,7 @@
                 <a class="navigation-link bold-link" href="#">Доставка</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link bold-link" href="#">Гарантия</a>
+                <a class="navigation-link bold-link for-garanty" href="#">Гарантия</a>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link bold-link" href="#">Контакты</a>
@@ -216,14 +216,20 @@
         </div>
       </section>
 
-      <div class="delivery">
-        <div class="delivery-item">
-          <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
+      <div class="delivery-container">
+        <div class="delivery">
+          <button class="button-truck" type="button">
+            <span class="visually-hidden">Доставка</span>
+          </button>
+          <div class="delivery-item">
+            <a class="button-delivery" href="#">Доставим редкий товар под заказ</a>
+          </div>
+          <button class="button-info" type="button">
+            <span class="visually-hidden">Информация о доставке</span>
+          </button>
         </div>
-        <button class="button-info" type="button">
-          <span class="visually-hidden">Информация о доставке</span>
-        </button>
       </div>
+
 
       <div class="about-columns">
         <section class="about-block">
@@ -271,16 +277,16 @@
             <h2 class="subscribe-title">Подпишитесь<br>на рассылку</h2>
             <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,<br>
               длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="newsletter-form-label visually-hidden" for="newsletter-email">электронная почта</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="newsletter-button" type="submit">Подписаться</button>
-            </form>
-            <p class="free">Это бесплатно</p>
+            <div class="newsletter-form-wrapper">
+              <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="newsletter-form-label visually-hidden" for="newsletter-email">электронная почта</label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+                <button class="newsletter-button" type="submit">Подписаться</button>
+              </form>
+              <p class="free">Это бесплатно</p>
+            </div>
           </div>
         </div>
-
-
       </section>
 
       <footer class="page-footer-main">

@@ -300,8 +300,12 @@ body {
   background-position: center;
 }
 
-.catalog-button:hover {
+.catalog-button:hover .catalog-menu{
+  display: block;
+}
 
+.catalog-menu {
+  display: none;
 }
 
 .bold-link {
@@ -1194,7 +1198,7 @@ body {
 }
 
 .field {
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1211,7 +1215,7 @@ body {
 }
 
 .newsletter-button {
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1592,7 +1596,7 @@ body {
 .catalog-filter-label {
   display: flex;
   margin-right: 5px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

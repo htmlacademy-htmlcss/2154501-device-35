@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header for-catalog-yellow">
       <div class="header-container">
 
         <a class="navigation-link logo" href="index.html">
@@ -17,19 +18,24 @@
           <div class="first-tape">
 
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="label-search">Поиск по сайту</label>
-              <input class="field" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
+              <label class="label-search visually-hidden">Поиск по сайту</label>
+              <input class="field-search" placeholder="Поиск по сайту" type="text" name="site-search" id="site-search" required>
               <button class="search-button button-transparent" type="submit">Поиск</button>
             </form>
 
-            <a class="navigation-link" href="#">Войти</a>
+            <a class="navigation-link person" href="#">Коля Петухов</a>
+
+            <a class="navigation-link grey" href="#">Выйти</a>
 
             <ul class="navigation-user">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Сравнить</a>
+                <a class="navigation-link compare" href="#">Сравнить</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Корзина</a>
+                <a class="navigation-link basket" href="#">
+                  <span class="number-of-basket">2</span>
+                  Корзина
+                </a>
               </li>
             </ul>
 
@@ -41,13 +47,13 @@
 
             <ul class="navigation-main">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
+                <a class="navigation-link bold-link" href="#">Доставка</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
+                <a class="navigation-link bold-link" href="#">Гарантия</a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
+                <a class="navigation-link bold-link" href="#">Контакты</a>
               </li>
             </ul>
 
@@ -56,7 +62,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main-container">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
@@ -78,6 +84,7 @@
         </ul>
       </header>
 
+      <div class="full-filter">
       <section class="catalog-monopods">
         <h2 class="inner-main-title">Фильтр:</h2>
 
@@ -94,6 +101,14 @@
                   <span class="visually-hidden">Изменить максимальную цену.</span>
                 </button>
               </div>
+            </div>
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                от <input class="range-input" type="number" value="0" name="min-price"> ₽
+              </label>
+              <label class="catalog-filter-label">
+                до <input class="range-input range-max" type="number" value="5000" name="max-price"> ₽
+              </label>
             </div>
           </fieldset>
 
@@ -159,14 +174,14 @@
 
           <section class="filter-buttons">
             <h2 class="visually-hidden">Кнопка применения фильтра</h2>
-            <button class="button button-blue button-for-filter" type="submit">Показать</button>
+            <button class="button button-for-filter for-yellow-line" type="submit">Показать</button>
           </section>
         </form>
       </section>
 
       <section class="catalog">
         <div class="catalog-head">
-          <h2 class="inner-main-title">Сортировка:</h2>
+          <h2 class="sorting-main-title">Сортировка:</h2>
           <div class= "select sorting-type">
             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
@@ -175,12 +190,12 @@
             </select>
           </div>
           <div class="sorting-direction">
-            <div class="catalog-view-link view-active">
+            <div class="catalog-view-link arrow-up view-active">
               <a class="button-for-view" href="#">
                 <span class="visually-hidden">По возрастанию</span>
               </a>
             </div>
-            <div class="catalog-view-link view-no-active">
+            <div class="catalog-view-link arrow-down view-no-active">
               <a class="button-for-view" href="#">
                 <span class="visually-hidden">По убыванию</span>
               </a>
@@ -253,11 +268,12 @@
             </ul>
           </div>
           </section>
+        </div>
 
 
 
 
-          <footer class="page-footer">
+          <footer class="page-footer  yellow-line-footer">
             <img class="device-logo" src="./images/logo-yellow.svg" width="145" height="36" alt="Логотип девайс.">
             <section class="footer-adress">
               <h2 class="visually-hidden">Адрес</h2>
@@ -281,32 +297,32 @@
               </ul>
             </section>
 
-            <section class="footer-social">
-              <h2 class="visually-hidden">Соц. сети</h2>
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a class="button" href="https://t.me/htmlacademy">
-                    <span class="visually-hidden">Telegram</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button social" href="https://www.youtube.com/user/htmlacademyru">
-                    <span class="visually-hidden">Youtube</span>
-                  </a>
-                </li>
-                <li class="footer-social-item">
-                  <a class="button" href="https://twitter.com/htmlacademy_ru">
-                    <span class="visually-hidden">Twitter</span>
-                  </a>
-                </li>
-              </ul>
-            </section>
-
             <section class="footer-contacts">
               <h2 class="visually-hidden">Контакты</h2>
               <address class="footer-contacts">
                 <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
+            </section>
+
+            <section class="footer-social">
+              <h2 class="visually-hidden">Соц. сети</h2>
+              <ul class="footer-social-list">
+                <li class="footer-social-item">
+                  <a class="button-telegram" href="https://t.me/htmlacademy">
+                    <span class="visually-hidden">Telegram</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button-YT" href="https://www.youtube.com/user/htmlacademyru">
+                    <span class="visually-hidden">Youtube</span>
+                  </a>
+                </li>
+                <li class="footer-social-item">
+                  <a class="button-twitter" href="https://twitter.com/htmlacademy_ru">
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+              </ul>
             </section>
 
             <section class="htmlacademy">

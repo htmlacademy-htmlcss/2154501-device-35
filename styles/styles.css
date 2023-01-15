@@ -204,7 +204,7 @@ body {
 
 .catalog-main {
   margin: 0 auto;
-  margin-bottom: 46px;
+  margin-bottom: -2px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -286,6 +286,7 @@ body {
   cursor: pointer;
   text-align: start;
   padding-left: 5px;
+  padding-top: 18px;
 }
 
 .catalog-button::after {
@@ -300,22 +301,37 @@ body {
   background-position: center;
 }
 
-.catalog-button:hover .catalog-menu{
-  display: block;
+.catalog-box:focus-within .catalog-menu {
+  display: flex;
+}
+
+.catalog-box:focus-within .catalog-button::after {
+  background-image: url("../images/catalog-button-minus.svg");
+  z-index: 4;
 }
 
 .catalog-menu {
   display: none;
   position: absolute;
   z-index: 3;
-  left: -56px;
+  left: 144px;
   width: 1160px;
-  height: 180px;
+  height: 166px;
   background-color: #FFE17F;
+  padding-top: 10px;
 }
 
 .catalog-list {
   list-style-type: none;
+  padding-left: 60px;
+}
+
+.for-quadro {
+  padding-left: 70px;
+}
+
+.catalog-menu-item {
+  margin-bottom: 14px;
 }
 
 .catalog-menu-link {
@@ -324,6 +340,8 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+  color: #000000;
+  text-transform: none;
 }
 
 .bold-link {
@@ -463,6 +481,28 @@ body {
   margin-bottom: 6px;
 }
 
+.button-in-slider:hover .more::before{
+  height: 40px;
+}
+
+.button-in-slider:focus-within {
+  outline: none;
+}
+
+.button-in-slider:focus-within .more{
+  outline: none;
+  border: solid 2px #AF4FFF;
+}
+
+.button-in-slider:active .more::before{
+  height: 40px;
+  background-color: #FFCC33;
+}
+
+.button-in-slider:disabled {
+  opacity: 0.3;
+}
+
 .more {
   position: relative;
   font-family: "Raleway", sans-serif;
@@ -557,12 +597,12 @@ body {
   display: flex;
   max-width: 1160px;
   flex-direction: row;
-  gap: 40px;
+  gap: 36px;
   justify-content: space-between;
   box-sizing: border-box;
   padding: 0;
-  margin-left: 8px;
-  margin-top: 43px;
+  margin-left: 5px;
+  margin-top: 41px;
 }
 
 .catalog-title {
@@ -574,6 +614,7 @@ body {
   color: #000000;
   text-decoration: none;
   letter-spacing: -0.02em;
+  outline: none;
 }
 
 .icon-vr,
@@ -583,12 +624,23 @@ body {
 .icon-watch,
 .icon-quadro {
   position: relative;
+  display: block;
+  outline: none;
+}
+
+.icon-vr::before,
+.icon-mono::before,
+.icon-camera::before,
+.icon-band::before,
+.icon-watch::before,
+.icon-quadro::before {
+  display: block;
+  margin-bottom: 33px;
+  outline: none;
 }
 
 .icon-vr::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
+  display: block;
   width: 160px;
   height: 160px;
   content: "";
@@ -599,9 +651,6 @@ body {
 }
 
 .icon-mono::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
   width: 160px;
   height: 160px;
   content: "";
@@ -612,9 +661,6 @@ body {
 }
 
 .icon-camera::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
   width: 160px;
   height: 160px;
   content: "";
@@ -625,9 +671,6 @@ body {
 }
 
 .icon-band::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
   width: 160px;
   height: 160px;
   content: "";
@@ -638,9 +681,6 @@ body {
 }
 
 .icon-watch::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
   width: 160px;
   height: 160px;
   content: "";
@@ -651,9 +691,6 @@ body {
 }
 
 .icon-quadro::before {
-  position: absolute;
-  top: -194px;
-  left: 0;
   width: 160px;
   height: 160px;
   content: "";
@@ -664,9 +701,11 @@ body {
 }
 
 .catalog-item {
-  width: 160px;
+  width: 166px;
   max-height: 253px;
   box-sizing: border-box;
+  outline: none;
+  border: solid 2px transparent;
 }
 
 .catalog-item:hover a::before{
@@ -735,7 +774,14 @@ body {
   border-left: solid 7px #000000;
   padding-left: 116px;
   padding-top: 23px;
+}
 
+.tabs-main {
+  display: none;
+}
+
+.active-tab {
+  display: block;
 }
 
 .tabs-title {
@@ -1960,7 +2006,7 @@ html {
   margin: 0 auto;
   max-width: 1160px;
   min-height: 560px;
-  margin-bottom: 200px;
+  margin-bottom: 7px;
 }
 
 .records-list {

@@ -61,6 +61,42 @@ body {
   margin-left: 4px;
 }
 
+.logo:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.logo:focus {
+  outline: none;
+  /*box-shadow: #83b3d3 0 0 1px;*/
+  border: 2px solid #7B61FF;
+  padding-top: 21px;
+  padding-right: 2px;
+  padding-left: -2px;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+.logo-footer {
+  width: 145px;
+}
+
+.logo-footer:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.logo-footer:focus {
+  outline: none;
+  border: 2px solid #7B61FF;
+  padding-bottom: 10px;
+}
+
+.logo-footer:active {
+  opacity: 0.3;
+}
 .field-search {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -239,7 +275,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  min-width: 236px;
+  min-width: 300px;
   background-color: transparent;
   color: #000000;
   text-decoration: none;
@@ -247,6 +283,9 @@ body {
   text-transform: uppercase;
   border: none;
   position: relative;
+  cursor: pointer;
+  text-align: start;
+  padding-left: 5px;
 }
 
 .catalog-button::after {
@@ -259,6 +298,10 @@ body {
   background-image: url("../images/catalog-button.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.catalog-button:hover {
+
 }
 
 .bold-link {
@@ -602,6 +645,19 @@ body {
   width: 160px;
   max-height: 253px;
   box-sizing: border-box;
+}
+
+.catalog-item:hover a::before{
+  background-color: #FFC700;
+}
+
+.catalog-item:focus-within {
+  outline: none;
+  border: solid 2px #AF4FFF;
+}
+
+.catalog-item:active {
+  opacity: 0.3;
 }
 
 .advantages-items {

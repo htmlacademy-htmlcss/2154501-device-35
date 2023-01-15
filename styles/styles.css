@@ -300,8 +300,30 @@ body {
   background-position: center;
 }
 
-.catalog-button:hover {
+.catalog-button:hover .catalog-menu{
+  display: block;
+}
 
+.catalog-menu {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  left: -56px;
+  width: 1160px;
+  height: 180px;
+  background-color: #FFE17F;
+}
+
+.catalog-list {
+  list-style-type: none;
+}
+
+.catalog-menu-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
 }
 
 .bold-link {
@@ -1194,7 +1216,7 @@ body {
 }
 
 .field {
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1211,7 +1233,7 @@ body {
 }
 
 .newsletter-button {
-  font-family: 'Raleway';
+  font-family: "Raleway", sans-serif;;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1592,7 +1614,7 @@ body {
 .catalog-filter-label {
   display: flex;
   margin-right: 5px;
-  font-family: 'Rubik';
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

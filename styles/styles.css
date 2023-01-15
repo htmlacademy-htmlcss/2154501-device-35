@@ -476,9 +476,9 @@ body {
 
 .button-in-slider {
   align-self: flex-start;
-  margin-top: 22px;
-  margin-left: 2px;
-  margin-bottom: 6px;
+  margin-top: 20px;
+  margin-left: 0;
+  margin-bottom: 4px;
 }
 
 .button-in-slider:hover .more::before{
@@ -520,6 +520,7 @@ body {
   display: flex;
   align-self: flex-end;
   align-items: flex-start;
+  border: solid 2px transparent;
 }
 
 .more::before {
@@ -905,6 +906,7 @@ body {
 
 .delivery:hover .button-truck {
   background-color: #FFC700;
+  cursor: pointer;
 }
 
 .delivery:active {
@@ -1971,7 +1973,8 @@ html {
 }
 
 .slider-pagination-item {
-  margin: 0 4px;
+  margin: 0;
+  border: solid 2px transparent;
 }
 
 .slider-pagination-button {
@@ -1987,6 +1990,10 @@ html {
 
 .slider-pagination-button:hover {
   opacity: 0.6;
+}
+
+.slider-pagination-item:focus-within {
+  border: solid 2px #AF4FFF;
 }
 
 .slider-pagination-button:active {

@@ -1497,6 +1497,29 @@ body {
   background-image: url("../images/twitter.svg");
 }
 
+.footer-icon:hover {
+  background-color: #ffc700;
+  border-radius: 20px;
+}
+
+.footer-icon:active {
+  background-color: #ffc700;
+  border-radius: 20px;
+  opacity: 0.3;
+}
+
+.contacts-logo svg:hover {
+  stroke: red;
+  fill: red;
+  color: #af4fff;
+ }
+
+ .contacts-logo:hover {
+  stroke: red;
+  fill: red;
+  color: #af4fff;
+ }
+
 .footer-contacts {
   grid-column: 3 / 4;
   grid-row: 2 / 3;

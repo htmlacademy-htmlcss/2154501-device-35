@@ -601,7 +601,7 @@ body {
   justify-content: flex-start;
   box-sizing: border-box;
   padding: 0;
-  margin-left: -3px;
+  margin-left: -4px;
   margin-top: 41px;
 }
 
@@ -1235,6 +1235,7 @@ body {
 
 .newsletter-wrapper {
   margin-left: -7px;
+  margin-bottom: 1px;
 }
 
 .newsletter-form {
@@ -1368,7 +1369,7 @@ body {
   row-gap: 31px;
   column-gap: 20px;
   padding: 62px 140px;
-  padding-bottom: 77px;
+  padding-bottom: 43px;
   width: 1160px;
   margin: 0 auto;
   padding-left: 143px;

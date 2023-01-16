@@ -465,7 +465,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   background-color: transparent;
-  color: #000000;
+  color: #444444;
   text-decoration: none;
   margin-top: -21px;
   max-width: 548px;
@@ -854,10 +854,10 @@ body {
 
 .tab-02::before {
   position: absolute;
-  top: 5px;
+  top: -10px;
   left: 558px;
-  width: 136px;
-  height: 164px;
+  width: 171px;
+  height: 195px;
   content: "";
   background-image: url("../images/garanty.svg");
   background-repeat: no-repeat;
@@ -871,10 +871,10 @@ body {
 
 .tab-03::before {
   position: absolute;
-  top: 5px;
-  left: 558px;
-  width: 136px;
-  height: 164px;
+  top: -6px;
+  left: 573px;
+  width: 156px;
+  height: 188px;
   content: "";
   background-image: url("../images/credit.svg");
   background-repeat: no-repeat;

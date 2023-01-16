@@ -941,7 +941,8 @@ body {
   padding-left: 4px;
   padding-top: 4px;
   display: block;
-  max-width: 900px;
+  width: 906px;
+  margin-left: 125px;
 }
 
 .button-truck {
@@ -956,7 +957,7 @@ body {
   border: none;
 }
 
-.button-info {
+.tultip-info {
   margin: 0;
   padding: 0;
   width: 125px;
@@ -1548,8 +1549,6 @@ body {
 }
 
 .footer-icon:active {
-  /*background-color: #ffc700;
-  border-radius: 20px;*/
   opacity: 0.3;
 }
 
@@ -2079,6 +2078,7 @@ html {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  z-index: 4;
 }
 
 .slider-pagination-item:not(:last-child) {

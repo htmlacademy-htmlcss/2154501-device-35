@@ -81,20 +81,32 @@ body {
 
 .logo-footer {
   width: 145px;
+  border: 2px solid transparent;
+  margin: -2px;
 }
 
-.logo-footer:hover {
+.device-logo {
+  fill: #ffc700;
+  cursor: pointer;
+}
+
+.device-logo:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.logo-footer:focus {
+.logo-footer:focus-within {
+  outline:none;
+  border: 2px solid #af4fff;
+}
+
+.device-logo:focus {
   outline: none;
-  border: 2px solid #7b61ff;
+  border: 2px solid #af4fff;
   padding-bottom: 10px;
 }
 
-.logo-footer:active {
+.device-logo:active {
   opacity: 0.3;
 }
 
@@ -1382,6 +1394,8 @@ body {
 .device-logo {
   grid-column: 1 / 2;
   grid-row: 1/ 2;
+  border: solid 2px transparent;
+  margin: -2px;
 }
 
 .footer-adress {
@@ -1425,10 +1439,29 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  border: solid 2px transparent;
+  margin: -2px;
 }
 
 .button-footer-contact {
-  margin-left: 1px;
+  margin-left: -1px;
+}
+
+.button-footer:hover {
+  color: #ffc700;
+  border-bottom: solid 2px #ffc700;
+}
+
+.button-footer:focus {
+  color: #ffffff;
+  border: solid 2px #af4fff;
+  outline: none;
+}
+
+.button-footer:active {
+  color: #ffc700;
+  border-bottom: solid 2px #ffc700;
+  opacity: 0.3;
 }
 
 .delivery-garanty-contacts-list {
@@ -1477,7 +1510,6 @@ body {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/telegram.svg");
 }
 
 .button-YT {
@@ -1486,7 +1518,6 @@ body {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/youtube.svg");
 }
 
 .button-twitter {
@@ -1495,31 +1526,62 @@ body {
   height: 40px;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("../images/twitter.svg");
+}
+
+.footer-icon {
+  border: solid 2px transparent;
+  margin: -2px;
+}
+
+.footer-icon:hover circle{
+  fill: #ffc700;
+  opacity: 1;
 }
 
 .footer-icon:hover {
-  background-color: #ffc700;
-  border-radius: 20px;
+  opacity: 1;
+}
+
+.footer-icon:focus-within {
+  outline: none;
+  border: solid 2px #af4fff;
 }
 
 .footer-icon:active {
-  background-color: #ffc700;
-  border-radius: 20px;
+  /*background-color: #ffc700;
+  border-radius: 20px;*/
   opacity: 0.3;
 }
 
-.contacts-logo svg:hover {
-  stroke: red;
-  fill: red;
-  color: #af4fff;
+.contacts-logo {
+  fill: #ffc700;
+  border: solid 1px transparent;
+
+}
+
+.contacts-logo:hover {
+    fill: #ffffff;
  }
 
- .contacts-logo:hover {
-  stroke: red;
-  fill: red;
-  color: #af4fff;
- }
+.contacts-logo:focus {
+  fill: #ffc700;
+  outline: none;
+  border: solid 5px #af4fff;
+}
+
+.htmlacademy-link:focus {
+  outline: none;
+}
+
+.htmlacademy-link:focus-within .contacts-logo{
+  outline: none;
+  border: solid 1px #af4fff;
+}
+
+.contacts-logo:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
 
 .footer-contacts {
   grid-column: 3 / 4;
@@ -1535,13 +1597,30 @@ body {
   line-height: 20px;
   color: #ffffff;
   font-style: normal;
+  border: solid 2px transparent;
+  margin: -2px;
+}
+
+.footer-contacts-phone:hover {
+  color: #ffc700;
+}
+
+.footer-contacts-phone:focus {
+  color: #ffffff;
+  border: solid 2px #af4fff;
+  outline: none;
+}
+
+.footer-contacts-phone:active {
+  color: #ffc700;
+  opacity: 0.3;
 }
 
 .htmlacademy {
   grid-column: 3 / 4;
   grid-row: 3 / 4;
-  margin-top: 16px;
-  margin-left: 59px;
+  margin-top: 15px;
+  margin-left: 58px;
 }
 
 .breadcrumbs {

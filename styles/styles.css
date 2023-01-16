@@ -592,14 +592,19 @@ body {
 .catalog-category {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1160px;
   flex-direction: row;
-  gap: 36px;
+  gap: 34px;
   justify-content: flex-start;
   box-sizing: border-box;
   padding: 0;
   margin-left: -3px;
   margin-top: 41px;
+}
+
+.catalog-category .catalog-item:nth-child(6n) {
+  margin-right: -7px;
 }
 
 .catalog-title {
